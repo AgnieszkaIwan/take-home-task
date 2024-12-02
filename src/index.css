@@ -44,3 +44,14 @@
     transform: rotate(450deg);
   }
 }
+
+.card {
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, padding 0.3s ease-out;
+  max-height: 100px;
+}
+
+.card.expanded {
+  max-height: 500px;
+  padding: 10px;
+}
